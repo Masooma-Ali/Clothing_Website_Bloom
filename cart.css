@@ -1,0 +1,173 @@
+/* Reset some default styles and set up the global styling */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f2f2f2;  /* Fallback background color */
+    background: url('cl5.jpeg') no-repeat center center fixed; /* Background image */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Styling for the header section */
+header {
+    background-image: url('w.jpg');  /* Header background image */
+    background-size: cover;
+    color: white;
+    padding: 15px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Styling for the logo in the header */
+.logo img {
+    max-width: 120px;
+    height: auto;
+}
+
+/* Styling for the navigation menu */
+.navigation {
+    list-style: none;
+    display: flex;
+}
+
+.navigation li {
+    margin-right: 20px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Styling for navigation icons */
+.navigationicon a {
+    margin-left: 20px;
+    color: white;
+}
+
+/* Styling for the main cart container */
+.cart-container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: lavender;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for individual cart items */
+.cart-item {
+    display: flex;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.cart-item img {
+    max-width: 80px;
+    margin-right: 20px;
+}
+
+.item-details h2 {
+    margin: 0;
+}
+
+/* Styling for the total section in the cart */
+.cart-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Styling for buttons */
+.btn {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Styling for the footer section */
+.footer {
+    background-image: url('w.jpg'); /* Footer background image */
+    background-size: 100%;
+    color: white;
+    padding: 10px 0;
+    margin: top; /* Potential error: should be margin-top */
+}
+
+/* Styling for the container and layout */
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Styling for the row layout */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Styling for individual columns in the footer */
+.column {
+    width: 30%;
+    padding: 20px 15px;
+}
+
+.column h4 {
+    font-size: 18px;
+    color: black;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 600;
+    position: relative;
+}
+
+.column h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: blueviolet;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.column ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: blueviolet;
+    font-weight: 400;
+    color: black;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.column ul li a:hover {
+    color: blueviolet;
+    padding-left: 8px;
+}
+
+.column .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+}
+
+.column .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+}

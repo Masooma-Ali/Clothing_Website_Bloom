@@ -1,0 +1,202 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Jost', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Header styles */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url('w.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 20px 10%;
+}
+/*styling of logo*/
+.logo img {
+    max-width: 120px;
+    height: auto;
+    margin-right: 10px;
+}
+
+/* Navigation styles */
+.navigation {
+    display: flex;
+}
+
+.navigation a {
+    color: black;
+    font-size: 16px;
+    text-transform: capitalize;
+    text-decoration: underline;
+    padding: 10px 20px;
+    font-weight: 400;
+    transition: all 0.42s ease;
+}
+
+.navigation a:hover {
+    color: blueviolet;
+}
+
+/* Navigation icon styles */
+.navigationicon {
+    display: flex;
+    align-items: center;
+}
+
+.navigationicon i {
+    margin-right: 20px;
+    color: black;
+    font-size: 25px;
+    font-weight: 400;
+    transition: all 0.42s ease;
+}
+
+.navigationicon i:hover {
+    color: blueviolet;
+}
+
+/* Home section styles */
+section {
+    padding: 15% 10%;
+}
+
+.home {
+    width: 100%;
+    height: 100vh;
+    background-image: url(new.jpg);
+    background-position: center bottom;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+}
+/* styling of the text*/
+.text h5 {
+    color: black;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.text h1 {
+    color: black;
+    font-size: 65px;
+    text-transform: capitalize;
+    line-height: 1.1;
+    font-weight: 600;
+    margin: 6px 0 10px;
+}
+
+.text p {
+    color: blueviolet;
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+/*styling of button*/
+.button {
+    display: inline-block;
+    color: #111;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    border: 2px solid #111;
+    padding: 12px 25px;
+    transition: all 0.42s ease;
+}
+
+.button:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Container and row styles */
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Footer styles all the info about the website and social media links included here */
+.footer {
+    background-image: url(w.jpg);
+    padding: 10px 0;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: auto;
+}
+
+.column {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.column h4 {
+    font-size: 18px;
+    color: black;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 600;
+    position: relative;
+}
+
+.column h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: blueviolet;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.column ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: blueviolet;
+    font-weight: 400;
+    color: black;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.column ul li a:hover {
+    color: blueviolet;
+    padding-left: 8px;
+}
+
+.column .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+}
+
+.column .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+}

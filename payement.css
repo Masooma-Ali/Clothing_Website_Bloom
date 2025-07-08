@@ -1,0 +1,209 @@
+/* General styling for the entire body */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url(cl3.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Styling for the header section */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url('w.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 20px 10%;
+}
+
+/* Styling for the logo within the header */
+.logo img {
+    max-width: 120px;
+    height: auto;
+    margin-right: 10px;
+}
+
+/* Styling for the navigation links */
+.navigation {
+    display: flex;
+}
+
+/* Styling for individual navigation links */
+.navigation a {
+    color: black;
+    font-size: 16px;
+    text-transform: capitalize;
+    text-decoration: underline;
+    padding: 10px 20px;
+    font-weight: 400;
+    transition: all .42s ease;
+}
+
+/* Hover effect for navigation links */
+.navigation a:hover {
+    color: blueviolet;
+}
+
+/* Styling for navigation icons */
+.navigationicon {
+    display: flex;
+    align-items: center;
+}
+
+/* Styling for individual navigation icons */
+.navigationicon i {
+    margin-right: 20px;
+    color: black;
+    font-size: 25px;
+    font-weight: 400;
+    transition: all .42s ease;
+}
+
+/* Hover effect for navigation icons */
+.navigationicon i:hover {
+    color: blueviolet;
+}
+
+/* Styling for container and rows */
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Styling for the footer section */
+.footer {
+    background-image: url('w.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 10px 0;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: auto;
+}
+
+/* Styling for columns in the footer */
+.column h4 {
+    font-size: 18px;
+    color: black;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 600;
+    position: relative;
+}
+
+/* Styling for pseudo-element (::before) in the footer */
+.column h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: blueviolet;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+/* Styling for links within columns in the footer */
+.column ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: blueviolet;
+    font-weight: 400;
+    color: black;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect for links in the footer */
+.column ul li a:hover {
+    color: blueviolet;
+    padding-left: 8px;
+}
+
+/* Styling for social links in the footer */
+.column .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+}
+
+/* Hover effect for social links in the footer */
+.column .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+/* Styling for the payment form */
+form {
+    width: 600px;
+    margin: 200px auto 20px auto; /* Adjusted the top margin */
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 #e6e6fa, 0 4px 8px 0 #e6e6fa;
+    background-color: #e6e6fa;
+}
+
+/* Styling for the heading in the payment form */
+h1 {
+    text-align: center;
+}
+
+/* Styling for common input boxes in the form */
+.box1 {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    box-sizing: border-box;
+    margin: 10px 0 15px;
+}
+
+/* Styling for inline-block divs in the form */
+.div1 {
+    display: inline-block;
+}
+
+/* Styling for another type of input box in the form */
+.box2 {
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    margin: 10px 0px 15px 0px;
+}
+
+/* Styling for buttons in the form */
+.btn {
+    width: 45%;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    box-sizing: border-box;
+    margin: 10px 0 15px;
+    display: inline-block;
+    text-align: center;
+    background-color: aliceblue;
+    font-size: 18; /* Assuming you meant font-size: 18px; */
+}
